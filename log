@@ -145,25 +145,47 @@ current model
 evaluating at fg event
 /opt/miniconda/lib/python3.7/site-packages/sklearn/metrics/classification.py:1437: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
   'precision', 'predicted', average, warn_for)
-current model over dev set macro f measure: 0.3154227675727632
-epoch: 0, loss: 1.211352
-current model over dev set macro f measure: 0.4236248725901799
-epoch: 1, loss: 1.113446
-current model over dev set macro f measure: 0.4338988332182524
-epoch: 2, loss: 1.028755
-current model over dev set macro f measure: 0.430586815369856
-epoch: 3, loss: 0.936933
-current model over dev set macro f measure: 0.4301973890187454
-epoch: 4, loss: 0.833340
-current model over dev set macro f measure: 0.4188546070983463
-epoch: 5, loss: 0.722970
-current model over dev set macro f measure: 0.4191919019064424
-epoch: 6, loss: 0.630692
-current model over dev set macro f measure: 0.416118115114099
-epoch: 7, loss: 0.535784
-current model over dev set macro f measure: 0.40708685317374915
-epoch: 8, loss: 0.459484
-current model over dev set macro f measure: 0.41451594641542977
+current model over dev set macro f measure: 0.3026474244425453
+epoch: 0, loss: 1.487222
+current model over dev set macro f measure: 0.41397005144400734
+epoch: 1, loss: 1.340546
+current model over dev set macro f measure: 0.4150733518253834
+epoch: 2, loss: 1.315479
+current model over dev set macro f measure: 0.42160343735791417
+epoch: 3, loss: 1.310306
+current model over dev set macro f measure: 0.42371087365420756
+epoch: 4, loss: 1.287965
+current model over dev set macro f measure: 0.43990777138894926
+epoch: 5, loss: 1.243475
+current model over dev set macro f measure: 0.42479899239586805
+epoch: 6, loss: 1.173173
+current model over dev set macro f measure: 0.43246424669530886
+epoch: 7, loss: 1.038354
+current model over dev set macro f measure: 0.41814064462318923
+epoch: 8, loss: 0.870224
+current model over dev set macro f measure: 0.4059352875122074
+epoch: 9, loss: 0.719146
+current model over dev set macro f measure: 0.3994670129792829
+epoch: 10, loss: 0.665530
+current model over dev set macro f measure: 0.39870466264502613
+epoch: 11, loss: 0.572283
+current model over dev set macro f measure: 0.3951438663654032
+epoch: 12, loss: 0.510518
+current model over dev set macro f measure: 0.40380506047036147
+epoch: 13, loss: 0.464287
+current model over dev set macro f measure: 0.40255254425335896
+epoch: 14, loss: 0.391928
+current model over dev set macro f measure: 0.40362006291363745
+epoch: 15, loss: 0.321788
+current model over dev set macro f measure: 0.4053969382916751
+epoch: 16, loss: 0.274579
+current model over dev set macro f measure: 0.40333268764747676
+epoch: 17, loss: 0.242197
+current model over dev set macro f measure: 0.40604773405017536
+epoch: 18, loss: 0.205969
+current model over dev set macro f measure: 0.40862040079610973
+epoch: 19, loss: 0.165544
+current model over dev set macro f measure: 0.407309000425706
 ```
 # CH
 ```
