@@ -4,7 +4,7 @@ Personal implementation of the ACL 19 paper "Tree LSTMs with Convolution Units t
 # Code Structure
 root
 
-├── _process_data
+├── process_data
 
 │   ├── generate_tree.pys
 
