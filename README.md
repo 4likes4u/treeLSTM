@@ -7,7 +7,7 @@ Personal implementation of the ACL 19 paper "Tree LSTMs with Convolution Units t
 |Our Implementation   |  0.511   |   0.470 |  0.471  |  0.484  |  0.559  |
 |Original Paper report|  0.514   |   0.579 |  0.553  |  0.469  |  0.547  |
 
-```
+
 The performance drops a lot compare to the orignal reported one, may due to following possible reasons:
 
 1. Possible bugs I am not find currently in my implementation. : )
@@ -18,7 +18,7 @@ The performance drops a lot compare to the orignal reported one, may due to foll
 4. Different training and development set: Due to the data is not clean in the raw form, some threads contains more than one source tweets, I just keep the first main tweets, this may cause the dataset not same as the authors use. 
    Additionally, I have to argue that the dataset in baseline Lukasik et al., 2016 is different from the author used (sample size in each class cannot match). So personally I think the compare between two method is meaningless. 
 5. *Just a question: in my view use 4 events to train and evaluate at another event is ill defined, because it will lead the model tuning hyper parameters at testing set.*
-```
+
 
 # Code Structure
 ```
