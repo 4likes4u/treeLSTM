@@ -11,7 +11,7 @@ Personal implementation of the ACL 19 paper "Tree LSTMs with Convolution Units t
 The performance drops a lot compare to the orignal reported one, may due to following possible reasons:
 
 1. Possible bugs I am not find currently in my implementation. : )
-2. 1) Different deep learning frameworks: They use DGL and pytorch to build the treelstm, however I build the whole model by pytorch purely. 2) Different tweets encoding methods: I adopt SKP (the best encoding method in the Table 3, however, the version of my SKP based on tensorflow but the authors' is theano.
+2. (1) Different deep learning frameworks: They use DGL and pytorch to build the treelstm, however I build the whole model by pytorch purely. (2) Different tweets encoding methods: I adopt SKP (the best encoding method in the Table 3, however, the version of my SKP based on tensorflow but the authors' is theano.
 3. Confused details in the paper: The author didn't report the batch size to train the model, and the initialization method of the first      hidden state and cell memory (i.e., h_{0}, c_{0}). 
    
    The most important one part - resampling the minor class is also missing, this part is very confused as described in paper section 3, so I just turn the weight of class comment as 0.5 and 1 for other classes, in my experiments this rate affects a lot. 
