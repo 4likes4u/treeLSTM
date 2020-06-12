@@ -41,7 +41,7 @@ Convert raw data into 1) raw tweets (output: "event.tweets") 2) clean row tree (
 ### get_label.py
 Get the label for the whole data in tree (json) form (output: "event_label.txt").
 
-"p.s. there are some threads lack of the label in annotation.json, I label them with class 4 to keep the tree structure. Class 4 will be ingored during training and validating."
+*p.s. there are some threads lack of the label in annotation.json, I label them with class 4 to keep the tree structure. Class 4 will be ingored during training and validating.*
 ### SKPencoder4tree.py
 Convert the raw tweets into SKP feature by tf-SKP in following repo [https://github.com/tensorflow/models/tree/master/research/skip_thoughts], output: "events.npy"
 
