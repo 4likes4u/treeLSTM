@@ -2,19 +2,15 @@
 Personal implementation of the ACL 19 paper "Tree LSTMs with Convolution Units to Predict Stance and Rumor Veracity in Social Media Conversations" with pytorch.
 
 # Code Structure
+'''
 root
-
 ├── process_data
-
 │   ├── generate_tree.pys
-
-│   └── get_label.py
-
+│   ├── get_label.py
 │   └── SKPencoder4tree.py
-
 ├── treeLSTM.py
-
-├── readme.md
+└── readme.md
+'''
 ## generate_tree.py
 Convert raw data into 1) raw tweets (output: "event.tweets") 2) clean row tree (output:  "event_tree.json")  3) clean original tree (output: "event_ori_tree.json")
 
