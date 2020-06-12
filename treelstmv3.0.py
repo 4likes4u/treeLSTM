@@ -47,7 +47,7 @@ class TreeLSTMCell(nn.Module):
         # self.fc_1 = torch.nn.Linear(self.hidden_size, 128)
         self.classifier = torch.nn.Linear(self.hidden_size,  self.class_num)
         self.dropout = torch.nn.Dropout(p=0.3)
-        self.sum = False
+        self.sum = True
     def forward(self, inputs, tree, current_child_id):
         # work for batch_size = 1
         # compute by recursive, to compute current node, we must have the child, i.e.: tree[child_id]
@@ -141,8 +141,8 @@ optimizer = optim.Adam(cd.parameters(), lr=0.001) #使用Adam 优化器
 # read data
 #define train and val events
 five_events = ['ch', 'fg', 'gc', 'ow', 'ss']
-dev_events = 0 # means for ch
-train_events = [1, 2, 3, 4]
+dev_events = 1# means for ch
+train_events = [3, 0, 2, 4]
 
 #read in dev set
 
@@ -191,6 +191,7 @@ train_feature = np.concatenate((np.load(five_events[train_events[0]] + "v2.npy")
 max_epoch = 30
 train_index_set = [i for i in range(0, train_feature.shape[0])]
 random.shuffle(train_index_set)
+print('evaluating at ' + five_events[dev_events] + ' event')
 for epoch in range(max_epoch):
     
     for index in train_index_set:
