@@ -6,7 +6,7 @@ for line in label_file:
 	line = line.strip()
 	label_set = json.loads(line)
 	tweetid = label_set['tweetid']
-	if(label_set.get("responsetype-vs-source", 0)!=0): # deep reply
+	if(label_set.get("responsetype-vs-source", 0)!=0): #reply
 		stance = label_set['responsetype-vs-source']
 		if(stance=="agreed"):
 			label_map[tweetid] = 0
@@ -16,16 +16,12 @@ for line in label_file:
 			label_map[tweetid] = 2
 		elif(stance=="comment"):
 			label_map[tweetid] = 3
-	# elif(label_set.get("responsetype-vs-source", 0)!=0): #directly reply
-	# 	stance = label_set['responsetype-vs-source']
-	# 	if(stance=="agreed"):
-	# 		label_map[tweetid] = 0
-	# 	elif(stance=="disagreed"):
-	# 		label_map[tweetid] = 1
-	# 	elif(stance=="appeal-for-more-information"):
-	# 		label_map[tweetid] = 2
-	# 	elif(stance=="comment"):
-	# 		label_map[tweetid] = 3
+	elif(label_set.get("support", 0)!=0): #source tweets
+		stance = label_set['support']
+		if(stance=="supporting"):
+			label_map[tweetid] = 0
+		else:
+			label_map[tweetid] = 1 # denying
 	else: # main tweet
 		label_map[tweetid] = 4
 
