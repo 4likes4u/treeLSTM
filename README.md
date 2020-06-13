@@ -4,7 +4,7 @@ Personal implementation of the ACL 19 paper "Tree LSTMs with Convolution Units t
 # Performance
 |Model|CH|SS|FG|OS|GC|
 | ---------- | :----------: | :-----------:  | :-----------: | :-----------:  | :-----------: |
-|Our Implementation   |  0.511   |   0.470 |  0.471  |  0.484  |  0.559  |
+|My Implementation   |  0.511   |   0.470 |  0.471  |  0.484  |  0.559  |
 |Original Paper report|  0.514   |   0.579 |  0.553  |  0.469  |  0.547  |
 
 
